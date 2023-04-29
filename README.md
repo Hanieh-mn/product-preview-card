@@ -1,6 +1,4 @@
 # product-preview-card
 product-preview-card is a fully responsive card built with Html and Css
 
-Live Demo: https://hanieh-mn.github.io/product-preview-card/
-
-<a href='https://hanieh-mn.github.io/product-preview-card/'>Demo</a>
+<a href='https://hanieh-mn.github.io/product-preview-card/' style="background-color: darkblue;">Live Demo</a>
