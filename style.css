@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Heebo:wght@700&family=Inter:wght@700;800&family=Montserrat:wght@500&family=Ms+Madi&family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 9px;
+    width: 560px;
+    max-width: 100vw;
+    height: 420px;
+    overflow: hidden;
+}
+
+.left {
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+
+.right {
+    width: 50%;
+    height: auto;
+    text-align: left;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right h3 {
+    color: #97979d;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.right h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.right p {
+    color: #6a6b71;
+    font-size: 13px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price del {
+    margin-right: 53px;
+    font-size: 12px;
+    color: #6a6b71;
+}
+
+.price h2 {
+    color: #3d8168;
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #3d8168;
+    display: flex;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn:hover {
+    background-color: hsl(158, 37%, 25%);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 100%;
+    }
+
+   .wrapper {
+       flex-direction: column;
+       height: auto;
+       width: 100%;
+       padding: 20px;
+   }
+
+   .left {
+       width: 100%;
+       height: auto;    
+   }
+
+   .left img {
+      height: 450px;
+      width: 100vw;
+      border-top-right-radius: 9px;
+      border-top-left-radius: 9px;
+   } 
+
+   .right {
+       width: 100%;
+       height: auto;
+       border-bottom-right-radius: 9px;
+       border-bottom-left-radius: 9px;
+   }
+
+   .right-section {
+       width: 100vw;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+    .left img {
+        height: 350px;
+        width: 100%;
+     } 
+}
+
+@media only screen and (max-width: 390px) {
+    .left img {
+        height: 250px;
+     } 
+}
+
+@media only screen and (max-width: 320px) {
+    .price {
+        display: block;
+    }
+
+    .right h1 {
+       font-size: 22px;
+    }
+    
+    .right p {
+        font-size: 11px;
+    }
+    
+}
